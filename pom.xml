@@ -7,6 +7,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <modules>
         <module>backend</module>
+        <module>ui-angular</module>
     </modules>
     <packaging>pom</packaging>
 
