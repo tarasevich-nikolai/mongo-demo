@@ -8,10 +8,27 @@
   "devDependencies": {
     "angular": "^1.6.4",
     "bootstrap": "^3.3.7",
+    "copy-webpack-plugin": "^4.0.1",
+    "extract-text-webpack-plugin": "^2.1.0",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
     "gulp-csso": "^3.0.0",
     "gulp-less": "^3.3.0",
-    "gulp-pug": "^3.3.0"
+    "gulp-pug": "^3.3.0",
+    "html-minifier": "^3.4.2",
+    "html-minify-loader": "^1.1.0",
+    "object-hash": "^1.1.7",
+    "path": "^0.12.7",
+    "require-dir": "^0.3.1",
+    "webpack": "^2.3.3",
+    "yargs": "^7.0.2"
+  },
+  "dependencies": {
+    "angular": "^1.6.4",
+    "angular-bootstrap": "^0.12.2",
+    "angular-ui-router": "^0.4.2",
+    "bootstrap": "^3.3.7",
+    "oclazyload": "^1.1.0",
+    "underscore": "^1.8.3"
   }
 }

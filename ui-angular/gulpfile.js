@@ -1,18 +1,13 @@
-var gulp = require('gulp');
-var less = require('gulp-less');
-var minifyCSS = require('gulp-csso');
+var gulp = require('gulp'),
+    requireDir = require('require-dir');
 
-gulp.task('html', function(){
-    return gulp.src('client/templates/*.pug')
-        .pipe(pug())
-        .pipe(gulp.dest('build/html'))
+requireDir('./gulp/tasks', {recurse: true});
+
+gulp.task('default', ['dist'], function() {
+
 });
 
-gulp.task('css', function(){
-    return gulp.src('client/templates/*.less')
-        .pipe(less())
-        .pipe(minifyCSS())
-        .pipe(gulp.dest('build/css'))
+process.on('uncaughtException', function(err) {
+   console.log("Error occured: ", err);
+   console.log("Restart required");
 });
-
-gulp.task('default', [ 'html', 'css' ]);
