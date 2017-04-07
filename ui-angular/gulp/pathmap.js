@@ -1,13 +1,19 @@
+/**
+ * Application folders mapping utility.
+ *
+ * Important: This file is sensitive to its location - move with care.
+ */
+
 var path = require('path');
 
 var root = path.join(path.resolve(__dirname), '..');
 
-console.log("Root directory ", root);
+console.log('Root directory', root);
 
-var pathmap = {
+module.exports = {
     root: root,
     npm: {
-        descriptors: path.join(root, 'package.json'),
+        descriptor: path.join(root, 'package.json'),
         descriptors: './node_modules/*/package.json'
     },
     build: path.join(root, 'build'),
@@ -16,5 +22,3 @@ var pathmap = {
         assets: 'assets/**/*.*'
     }
 };
-
-module.exports = pathmap;
